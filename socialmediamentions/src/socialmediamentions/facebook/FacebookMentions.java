@@ -1,4 +1,4 @@
-package facebook;
+package socialmediamentions.facebook;
 
 import java.util.Collections;
 import java.util.List;

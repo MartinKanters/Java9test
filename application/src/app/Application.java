@@ -1,7 +1,7 @@
 package app;
 
-import exposed.SocialMediaMentions;
-import facebook.FacebookMentions;
+import socialmediamentions.exposed.SocialMediaMentions;
+import socialmediamentions.facebook.FacebookMentions;
 
 public class Application {
     public static void main(String... args) {

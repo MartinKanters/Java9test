@@ -1,4 +1,4 @@
-package twitter;
+package socialmediamentions.twitter;
 
 import java.util.Arrays;
 import java.util.List;

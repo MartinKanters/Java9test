@@ -1,7 +1,7 @@
-package exposed;
+package socialmediamentions.exposed;
 
-import facebook.FacebookMentions;
-import twitter.TwitterMentions;
+import socialmediamentions.facebook.FacebookMentions;
+import socialmediamentions.twitter.TwitterMentions;
 
 import java.util.ArrayList;
 import java.util.List;
