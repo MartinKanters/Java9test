@@ -2,14 +2,18 @@
 
 library:
 
-    javac -d socialmediamentions/target socialmediamentions/src/exposed/*.java socialmediamentions/src/facebook/*.java socialmediamentions/src/twitter/*.java
+    javac -d socialmediamentions/target socialmediamentions/src/module-info.java ^
+        socialmediamentions/src/socialmediamentions/exposed/*.java ^
+        socialmediamentions/src/socialmediamentions/facebook/*.java ^
+        socialmediamentions/src/socialmediamentions/twitter/*.java
 
 application:
 
-    javac -cp socialmediamentions/target -d application/target application/src/app/*.java
+    javac\bin\javac --module-path socialmediamentions/target -d application/target application/src/module-info.java ^
+        application/src/app/*.java
 
 #Running
 
 application:
     
-    java -cp socialmediamentions/target;application/target app.Application
+    java --module-path socialmediamentions/target;application/target -m app/app.Application
