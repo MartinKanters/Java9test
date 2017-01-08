@@ -17,3 +17,9 @@ application:
 application:
     
     java --module-path socialmediamentions/target;application/target -m app/app.Application
+    
+    
+#Jdeps
+
+    jdeps application/target/app/Application.class
+    jdeps socialmediamentions/target/socialmediamentions/exposed/SocialMediaMentions.class
